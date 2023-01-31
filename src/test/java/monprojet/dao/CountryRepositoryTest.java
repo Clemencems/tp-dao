@@ -56,7 +56,8 @@ public class CountryRepositoryTest {
 
         @Test
     void testListePays(){
-        log.info("Nous avons :");
+        log.info("On retourne le nom du pays et sa population");
         String nomPays = log.getName();
+        assertEquals(CountryDTO.ListePays, nomPays, "Nous avons :");
         }
     }
